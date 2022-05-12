@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<div class="row">              
+    <div class="modal fade" id="registerPeliculaDialog" tabindex="-1" role="dialog">
+      <div class="modal-dialog" style="width: 400px">
+        <div class="modal-content">
+            <div class="modal-header" >
+                <div class="d-flex justify-content-center" style="width: 90%">  <img class="img-circle" id="img_logo" src="images/user.png" style="max-width: 50px; max-height: 50px"> </div>
+                <div > <button type="button" class="close" data-dismiss="modal"> <span aria-hidden="true">&times;</span> </button> </div>
+            </div>
+            <form id="RegisterPeliculaForm">
+            <div class="modal-body">
+                <div class="input-group" style="margin-bottom: 25px">
+                    <div class="input-group-prepend "><span class="input-group-text"><i class="fa fa-user bigicon"></i></span></div>
+                    <input class="form-control" placeholder="Nombre de la pelicula" type="text" id="name-movie" name="name-movie" value="" required>
+                    <div class="invalid-feedback">Favor ingrese nombre de la pelicula</div>
+                </div>
+                <div class="input-group" style="margin-bottom: 25px">
+                    <!-- <div class="input-group-prepend "><span class="input-group-text"><i class="fa fa-user bigicon"></i></span></div> -->
+                    <input type="checkbox" id="enCartelera" name="enCartelera" value="true">
+                    <a><br><br> En Cartelera</a>
+                </div>                 
+                <form>
+                        <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
+                          <label for="imagen">Imagen</label>
+                          <input type="file" accept="image/*" class="form-control formPeli" name="imagen" id="imagen" placeholder="Imagen">
+                          <div class="invalid-feedback" id="validacionImagen" style="color:red">Favor ingrese una imagen para la pelicula</div>
+                        </div>
+                </form>            
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+                <div>
+                    <button type="button" id="registrarPelicula" class="btn btn-primary btn-lg btn-block">Registrar Pelicula</button>
+                </div>
+            </div>
+            <div id="errorDiv" style="width:80%; margin: auto;"></div>     
+        </form>
+        </div>
+    </div>
+</div>
+</div> 
